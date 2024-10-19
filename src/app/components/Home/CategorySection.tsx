@@ -46,21 +46,32 @@ const CategorySection = () => {
     },
   ];
   return (
-    <div className="hot_jobs__section">
-      <h3 className="hot_jobs_title">হট জবস</h3>
+    <div
+      className="hot_jobs__section"
+      style={{ display: "flex", alignItems: "center" }}
+    >
       <div className="main-container">
-        <div className="category_container ">
-          {data?.map((category, index) => {
-            return (
-              <div key={index} className="category__card">
-                <Image className="image" width={48} height={48} src={category?.img} alt="" />
-                <div>
-                  <h2>{category?.name}</h2>
-                  <p>{category?.text}</p>
+        <h3 className="hot_jobs_title" style={{marginBottom:'70px'}}>হট জবস</h3>
+        <div className="main-container">
+          <div className="category_container ">
+            {data?.map((category, index) => {
+              return (
+                <div key={index} className="category__card">
+                  <Image
+                    className="image"
+                    width={48}
+                    height={48}
+                    src={category?.img}
+                    alt=""
+                  />
+                  <div>
+                    <h2>{category?.name}</h2>
+                    <p>{category?.text}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
