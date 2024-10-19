@@ -239,9 +239,12 @@ user-select: none;
    color: #0C0F12;
 }
 
-/* hero section style start from here  */
-
-.hero_section{
+.hero__section{
     background-color: #ECEDDF;
-    display: flex;
+
+}
+.hero__container{
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
 }
