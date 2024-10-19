@@ -240,9 +240,7 @@ user-select: none;
    color: #0C0F12;
 }
 
-/* hero section style start from here  */
-
-.hero_section{
+.hero__section{
     background-color: #ECEDDF;
     display: flex;
 }
