@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Li Ador Noirrit';
+    src: url('./fonts/li-ador.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*-----------------------
+    Common CSS
+-------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Li Ador Noirrit', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-family: 'Li Ador Noirrit', sans-serif;
+    background: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Li Ador Noirrit', sans-serif;
+}
+
+p {
+    font-family: 'Li Ador Noirrit', sans-serif;
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none !important;
+}
+
+button,
+select {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*-----------------------
+      Common CSS
+  -------------------------*/
+
+.main-container {
+    width: 1224px;
+}
+
+.header__top {
+    background-color: #058041;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+.header__top .info_left {
+    display: flex;
+    gap: 15px;
+    padding: 10px 40px;
+}
+
+.header__top .info-right {
+    padding: 10px 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.header__top .info_email span {
+    width: 24px;
+    height: 24px;
+}
+
+.header__top .social_btn_wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.header__top .social_btn {
+    width: 30px;
+    height: 30px;
+    border: 1.26px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__lang-switch {
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+user-select: none;
+    position: relative;
+}
+.eng{
+    left: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.ban{
+    right: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.header__lang-switch-btn{
+    position: absolute;
+    font-family: 'Li Ador Noirrit', sans-serif;
+    font-size: 16px;
+    top: 50%;
+    height: 31px;
+    padding: 0 8px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    width: 56px;
+    transform: translateY(-50%);
+    transition:  all .3s ease-in-out;
+    z-index: 10;
+}
+
+.header__lang-switch-btn.eng{
+    left: 0;
+}
+
+.header__lang-switch-btn.bng{
+    left:calc(110px - 56px) ;
+}
+
+/* header bottom section style start from here  */
+
+.header__bottom {
+    height: 87px;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+.header__bottom  > div{
+    padding: 10px 40px;
+}
+
+
+.header-nav-wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-nav-wrapper .nav-left{
+    display: flex;
+    gap: 20px;
+}
+.nav-right{
+    width: 250px;
+}
+.header-nav-wrapper .nav-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-nav-wrapper .nav-item .first-logo{
+    background-color: #D5FFF9;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-nav-wrapper .nav-item .second-logo{
+    background-color:#FFEBD0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-nav-wrapper .nav-text{
+   font-size: 18px;
+   line-height: 16px;
+   color: #0C0F12;
+}
+
+/* hero section style start from here  */
+
+.hero_section{
+    background-color: #ECEDDF;
+    display: flex;
+}
