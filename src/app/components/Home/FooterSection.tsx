@@ -15,11 +15,14 @@ const FooterSection = () => {
               ফলাফল আসে।
             </p>
           </div>
+          <div>
+
+          </div>
           <div className="right-side">
             <p className="newsletter-title">আমাদের নিউজলেটার সদস্যতা</p>
-            <div>
+            <div className="newsletter-content">
               <input className="newsletter-input" type="email" name="email" id="email" placeholder="ইমেইল" />
-              <button>সেভ করুন</button>
+              <button className="submit">সেভ করুন</button>
             </div>
           </div>
         </div>

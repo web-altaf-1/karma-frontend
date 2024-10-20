@@ -128,7 +128,7 @@
     margin-bottom: 70px;
 }
 
-.category__card .image {
+.category__card svg {
     padding-left: 30px;
 }
 
@@ -171,7 +171,7 @@
     gap: 10px;
     background-color: white;
     margin-top: 12px;
-    padding: 12px 20px;
+    padding: 12px 14px;
     border-radius: 12px;
 }
 
@@ -371,6 +371,21 @@
     color: white;
 }
 
+.newsletter-content{
+    position: relative;
+}
+.newsletter-content button{
+    position: absolute;
+    right: 0;
+}
+.newsletter-content .submit{
+    height: 100%;
+    width: 125px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
 @media only screen and (max-width: 768.98px) {
     .hero__nav .link {
         color: #7D7D7D;

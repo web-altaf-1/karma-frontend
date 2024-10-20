@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import LocationImage from "@/app/assets/map-pin.svg";
-
+import LocationIcon from "@/app/assets/icons/home/LocationIcon";
+import HeroImage from '@/app/assets/images/home/hero.png'
 const HeroSection = () => {
   return (
     <div className="hero__section">
@@ -22,12 +22,7 @@ const HeroSection = () => {
               className="hero__keyword-input"
             />
             <div className="hero__location-input">
-              <Image
-                height={18}
-                width={18}
-                src={LocationImage}
-                alt="location"
-              />
+              <LocationIcon width={18} height={18}/>
               <input type="text" className="input-main" placeholder="স্থান নির্বাচন করুন" />
             </div>
           </div>
@@ -63,7 +58,7 @@ const HeroSection = () => {
           <Image
             width={652}
             height={461}
-            src="/images/hero.svg"
+            src={HeroImage}
             alt="hero-image"
             className="hero__thumb-img"
           />
