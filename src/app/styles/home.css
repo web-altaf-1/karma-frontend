@@ -326,6 +326,12 @@
     padding-left: 20px;
 }
 
+/* footer section styles  */
+
+.footer__section{
+    
+}
+
 @media only screen and (max-width: 768.98px) {
     .hero__nav .link {
         color: #7D7D7D;
