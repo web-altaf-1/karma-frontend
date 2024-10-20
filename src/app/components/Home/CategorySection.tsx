@@ -48,7 +48,6 @@ const CategorySection = () => {
   return (
     <div
       className="hot_jobs__section"
-      style={{ display: "flex", alignItems: "center" }}
     >
       <div className="main-container">
         <h3 className="hot_jobs_title" style={{marginBottom:'70px'}}>হট জবস</h3>
