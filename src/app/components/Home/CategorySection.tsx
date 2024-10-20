@@ -11,55 +11,67 @@ const CategorySection = () => {
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Analyst",
       text: "235 Jobs Available",
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Electrician",
       text: "235 Jobs Available",
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Finance",
       text: "235 Jobs Available",
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Technology",
       text: "235 Jobs Available",
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Engineering",
       text: "235 Jobs Available",
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Marketing",
       text: "235 Jobs Available",
     },
     {
       img: Icon1,
-      name: "Design",
+      name: "Programmer",
       text: "235 Jobs Available",
     },
   ];
   return (
-    <div className="hot_jobs__section" >
-      <h3 className="hot_jobs_title">হট জবস</h3>
-      <div className="category_container main-container">
-        {data?.map((category, index) => {
-          return (
-            <div key={index} className="category__card">
-              <Image width={48} height={48} src={category?.img} alt="" />
-              <div>
-                <h2>{category?.name}</h2>
-                <p>{category?.text}</p>
-              </div>
-            </div>
-          );
-        })}
+    <div
+      className="hot_jobs__section"
+    >
+      <div className="main-container">
+        <h3 className="hot_jobs_title" style={{marginBottom:'70px'}}>হট জবস</h3>
+        <div className="main-container">
+          <div className="category_container ">
+            {data?.map((category, index) => {
+              return (
+                <div key={index} className="category__card">
+                  <Image
+                    className="image"
+                    width={48}
+                    height={48}
+                    src={category?.img}
+                    alt=""
+                  />
+                  <div>
+                    <h2>{category?.name}</h2>
+                    <p>{category?.text}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

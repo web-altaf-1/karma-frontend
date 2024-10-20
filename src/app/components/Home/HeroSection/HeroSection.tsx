@@ -1,32 +1,73 @@
 import Image from "next/image";
 import React from "react";
+import LocationImage from "@/app/assets/map-pin.svg";
 
 const HeroSection = () => {
   return (
-    <div className="hero_section">
-      <div>
-        <div>
-            <p>480+ এর বেশি মানুষ একটি স্বপ্নের চাকরি পান</p>
-        </div>
-        <div>
-            <div>
-                <h1>পছন্দের চাকরিটি খুঁজুন!</h1>
-                <p>এবং যোগ্য কর্মী নিয়োগ করুন কর্মসংস্থান এর সাথে পার্টনারশিপের মাধ্যমে দক্ষ কর্মী খুজে নিন এবং চাকরি প্রত্যাশিদের নির্ভরযোগ্য নেটওয়ার্কে যুক্ত হউন</p>
+    <div className="hero__section">
+      <div className="hero__container">
+        <div className="hero__content">
+          <p className="hero__sub-title">
+            480+ এর বেশি মানুষ একটি স্বপ্নের চাকরি পান
+          </p>
+          <h2 className="hero__title">পছন্দের চাকরিটি খুঁজুন!</h2>
+          <p className="hero__desc">
+            এবং যোগ্য কর্মী নিয়োগ করুন কর্মসংস্থান এর সাথে পার্টনারশিপের মাধ্যমে
+            দক্ষ কর্মী খুজে নিন এবং চাকরি প্রত্যাশিদের নির্ভরযোগ্য নেটওয়ার্কে
+            যুক্ত হউন
+          </p>
+          <div className="hero__search">
+            <input
+              placeholder="কীওয়ার্ড লিখুন..."
+              className="hero__keyword-input"
+            />
+            <div className="hero__location-input">
+              <Image
+                height={18}
+                width={18}
+                src={LocationImage}
+                alt="location"
+              />
+              <input type="text" className="input-main" placeholder="স্থান নির্বাচন করুন" />
             </div>
-            <div>
-                <div>
-                    <input type="text" placeholder="কীওয়ার্ড লিখুন..." />
-                </div>
-            </div>
+          </div>
+          <ul className="hero__nav">
+            <li className="hero__nav-list">
+              <a href="" className="link">
+                Designer
+              </a>
+            </li>
+            <li className="hero__nav-list">
+              <a href="" className="link">
+                Developer
+              </a>
+            </li>
+            <li className="hero__nav-list">
+              <a href="" className="link">
+                Tester
+              </a>
+            </li>
+            <li className="hero__nav-list">
+              <a href="" className="link">
+                Writting
+              </a>
+            </li>
+            <li className="hero__nav-list">
+              <a href="" className="link">
+                Project Manager
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div>
-        <Image
-          width={652}
-          height={461}
-          src="/images/hero.svg"
-          alt="hero-image"
-        />
+        <div className="hero__thumb">
+          <Image
+            width={652}
+            height={461}
+            src="/images/hero.svg"
+            alt="hero-image"
+            className="hero__thumb-img"
+          />
+        </div>
       </div>
     </div>
   );
