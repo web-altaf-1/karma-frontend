@@ -237,6 +237,57 @@
     text-align: center;
 }
 
+/* looking expert style from here  */
+.looking__expert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 476px;
+    background-color: #058041;
+}
+
+.looking__expert .expert-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.looking__expert .expert-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.looking__expert .content-title {
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 76px;
+    text-align: center;
+}
+
+.looking__expert .sub-text {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.expert-wrapper .expert-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.expert-wrapper .expert-btns button {
+    width: 195px;
+    height: 58px;
+    padding: 14px 34px;
+    border-radius: 40px;
+    font-size: 19px;
+    color: #000000;
+    /* font-weight: 600; */
+}
+
 
 @media only screen and (max-width: 768.98px) {
     .hero__nav .link {
@@ -280,11 +331,12 @@
         width: 446px;
         height: 315px;
     }
+
     .hot_jobs_title {
         padding: 30px 0px;
         margin-bottom: 0px;
     }
-    
+
 
     /* category start from here  */
     .category_container {
@@ -308,16 +360,18 @@
     }
 
     /* industry start from here  */
-    .industry__container{
+    .industry__container {
         padding-top: 40px;
         padding-bottom: 40px;
-    } 
-    .search_industry_title{
+    }
+
+    .search_industry_title {
         font-size: 26px;
         line-height: 36px;
         text-align: center;
         font-weight: 600;
     }
+
     .all-industry {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 26px;
@@ -345,7 +399,27 @@
         grid-template-columns: repeat(1, 1fr);
         max-width: 398px;
     }
-    .functional__area .functional-item{
+
+    .functional__area .functional-item {
         width: 100%;
+    }
+
+    /* looking expert style from here  */
+    .looking__expert .content-title{
+        font-size: 36px;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+    .looking__expert .sub-text{
+        font-size: 18px;
+        line-height: 28px;
+        /* padding: 0 10px; */
+    }
+    .expert-wrapper .expert-btns button{
+        width: 191px;
+        height: 54px;
+        padding: 14px 32px;
+        font-size: 16px;
+        line-height: 26px;
     }
 }
