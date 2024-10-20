@@ -288,6 +288,43 @@
     /* font-weight: 600; */
 }
 
+/* app section start from here  */
+
+.app-section .content-title {
+    font-size: 48px;
+    line-height: 76px;
+}
+
+.app-section .app-btns {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+}
+
+.app-section .app-btns .btn-link {
+    width: 239px;
+    height: 76px;
+    border-radius: 11px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.app-section .btn-link .btn-main-text {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+.app-section .btn-link .btn-sub-text {
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
+}
+.app-section .app-btns .btn-link img {
+    padding-left: 20px;
+}
 
 @media only screen and (max-width: 768.98px) {
     .hero__nav .link {
@@ -405,21 +442,29 @@
     }
 
     /* looking expert style from here  */
-    .looking__expert .content-title{
+    .looking__expert .content-title {
         font-size: 36px;
         font-weight: 700;
         padding: 0 20px;
     }
-    .looking__expert .sub-text{
+
+    .looking__expert .sub-text {
         font-size: 18px;
         line-height: 28px;
         /* padding: 0 10px; */
     }
-    .expert-wrapper .expert-btns button{
+
+    .expert-wrapper .expert-btns button {
         width: 191px;
         height: 54px;
         padding: 14px 32px;
         font-size: 16px;
         line-height: 26px;
+    }
+
+    /* app section start from here  */
+    .app-section .content-title {
+        font-size: 36px;
+        line-height: 46px;
     }
 }
