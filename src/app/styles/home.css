@@ -474,3 +474,66 @@
         line-height: 46px;
     }
 }
+
+/* ----------------------------- */
+.find-job__section{
+    padding: 50px 0;
+    background-color: antiquewhite;
+}
+.find-job__container{
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.item-icon{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: relative;
+    z-index: 10;
+}
+.item-icon-wrap{
+    display: flex;
+    align-items: center;
+}
+.item-icon-wrap::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    z-index: -9;
+    border: 1px dotted #000000;
+    top: 20px;
+    left: 20px;
+}
+.find-job__item{
+    display: flex;
+    align-items: start;
+    column-gap: 50px;
+}
+
+.content-title{
+    margin-bottom: 14px;
+}
+.find-job__right{
+    display: flex;
+    row-gap: 80px;
+    flex-direction: column;
+    position: relative;
+}
+.find-job__right::after{
+    content: '';
+    position: absolute;
+    border-left: 1.5px dotted #000000;
+    height: 100%;
+    left: 60px;
+}

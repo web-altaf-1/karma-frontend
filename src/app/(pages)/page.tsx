@@ -6,6 +6,7 @@ import SearchByIndustry from "../components/home/SearchByIndustry";
 import FunctionalArea from "../components/home/FunctionalArea";
 import LookingExpert from "../components/home/LookingExpert";
 import AppSection from "../components/home/AppSection";
+import FindJob from "../components/Home/FindJob";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <CategorySection />
       <SearchByIndustry />
       <LookingExpert />
+      <FindJob />
       <FunctionalArea />
       <AppSection />
     </div>
