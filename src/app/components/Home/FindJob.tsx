@@ -11,7 +11,7 @@ const FindJob = () => {
                 <Image src={thumb} width={417} height={543} alt="thumb" className="find-job__thumb" />
             </div>
             <div className="find-job__right">
-                
+                <div className="border"></div>
                 <div className="find-job__item">
                     <div className="item-icon">
                         <div className="item-icon-wrap">
