@@ -5,6 +5,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Li Ador Noirrit';
+    src: url('./fonts/li-ador-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Li Ador Noirrit';
+    src: url('./fonts/li-ador-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 /*-----------------------
     Common CSS
@@ -95,6 +107,11 @@ a:hover {
 
 .main-container {
     width: 1224px;
+    margin: 0 auto;
+}
+.second-container {
+    width: 976px;
+    margin: 0 auto;
 }
 
 .header__top {
@@ -143,24 +160,27 @@ a:hover {
     height: 30px;
     border-radius: 20px;
     border: 1px solid #ffffff;
-user-select: none;
+    user-select: none;
     position: relative;
 }
-.eng{
+
+.eng {
     left: 10px;
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
 }
-.ban{
+
+.ban {
     right: 10px;
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
 }
-.header__lang-switch-btn{
+
+.header__lang-switch-btn {
     position: absolute;
     font-family: 'Li Ador Noirrit', sans-serif;
     font-size: 16px;
@@ -172,16 +192,16 @@ user-select: none;
     background-color: white;
     width: 56px;
     transform: translateY(-50%);
-    transition:  all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     z-index: 10;
 }
 
-.header__lang-switch-btn.eng{
+.header__lang-switch-btn.eng {
     left: 0;
 }
 
-.header__lang-switch-btn.bng{
-    left:calc(110px - 56px) ;
+.header__lang-switch-btn.bng {
+    left: calc(110px - 56px);
 }
 
 /* header bottom section style start from here  */
@@ -192,30 +212,36 @@ user-select: none;
     gap: 120px;
     align-items: center;
 }
-.header__bottom  > div{
+
+.header__bottom>div {
     padding: 10px 40px;
 }
 
 
-.header-nav-wrapper{
+.header-nav-wrapper {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
-.header-nav-wrapper .nav-left{
+
+.header-nav-wrapper .nav-left {
     display: flex;
     gap: 20px;
 }
-.nav-right{
+
+.nav-right {
     width: 250px;
 }
-.header-nav-wrapper .nav-item{
+
+.header-nav-wrapper .nav-item {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.header-nav-wrapper .nav-item .first-logo{
+
+.header-nav-wrapper .nav-item .first-logo {
     background-color: #D5FFF9;
     width: 40px;
     height: 40px;
@@ -224,8 +250,9 @@ user-select: none;
     align-items: center;
     justify-content: center;
 }
-.header-nav-wrapper .nav-item .second-logo{
-    background-color:#FFEBD0;
+
+.header-nav-wrapper .nav-item .second-logo {
+    background-color: #FFEBD0;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -233,18 +260,70 @@ user-select: none;
     align-items: center;
     justify-content: center;
 }
-.header-nav-wrapper .nav-text{
-   font-size: 18px;
-   line-height: 16px;
-   color: #0C0F12;
+
+.header-nav-wrapper .nav-text {
+    font-size: 18px;
+    line-height: 16px;
+    color: #0C0F12;
 }
 
-.hero__section{
+.hero__section {
     background-color: #ECEDDF;
-
+    display: flex;
 }
-.hero__container{
-    max-width: 1224px;
-    width: 100%;
-    margin: 0 auto;
+
+
+@media only screen and (max-width: 768.98px) {
+    .main-container{
+        max-width: 398px;
+    }
+    .second-container{
+        max-width: 398px;
+    }
+    .header__top{
+        align-items: center;
+    }
+    .header__top .social_btn_wrapper {
+        display: none;
+    }
+    .info_email{
+        font-size: 12px;
+        display: flex;
+        gap: 4px;
+    }
+    .header__top .info_left {
+        padding: 10px 10px;
+    }
+    .info_left .quesion{
+        font-size: 12px;
+    }
+    .mail-logo{
+        width: 14px;
+        height: 14px;
+    }
+    .header__top .info-right{
+        padding: 10px 10px;
+    }
+    .header__lang-switch{
+        width: 93px;
+        height: 22px;
+    }
+    .header__lang-switch-btn{
+        width: 48px;
+        font-size: 12px;
+        height: 22px;
+    }
+    .eng {
+        font-size: 12px;
+    }
+    
+    .ban {
+        font-size: 12px;
+    }
+    .header__lang-switch-btn.bng {
+        left: calc(93px - 48px);
+    }
+    .header-nav-wrapper{
+        display: none;
+    }
 }
