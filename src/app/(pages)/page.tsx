@@ -4,6 +4,7 @@ import HeroSection from "../components/home/HeroSection";
 import CategorySection from "../components/home/CategorySection";
 import SearchByIndustry from "../components/home/SearchByIndustry";
 import FunctionalArea from "../components/home/FunctionalArea";
+import LookingExpert from "../components/home/LookingExpert";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <CategorySection />
       <SearchByIndustry />
-
+      <LookingExpert />
       <FunctionalArea />
     </div>
   );
