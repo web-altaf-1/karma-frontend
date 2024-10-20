@@ -50,7 +50,7 @@ const CategorySection = () => {
       className="hot_jobs__section"
     >
       <div className="main-container">
-        <h3 className="hot_jobs_title" style={{marginBottom:'70px'}}>হট জবস</h3>
+        <h3 className="hot_jobs_title" >হট জবস</h3>
         <div className="main-container">
           <div className="category_container ">
             {data?.map((category, index) => {
