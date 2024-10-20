@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Image1 from "@/app/assets/logo.svg";
+import MainLogoIcon from "@/app/assets/icons/home/MainLogoIcon";
 const Header = () => {
   const [language, setLanguage] = useState(true);
 
@@ -158,7 +159,7 @@ const Header = () => {
       <div className="header__bottom">
         <div>
           <div className="logo">
-            <Image width={52} height={41} src={Image1} alt="a" />
+            <MainLogoIcon></MainLogoIcon>
           </div>
         </div>
         <div className="header-nav-wrapper">
