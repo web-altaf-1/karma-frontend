@@ -128,7 +128,7 @@
     margin-bottom: 70px;
 }
 
-.category__card .image {
+.category__card svg {
     padding-left: 30px;
 }
 
@@ -171,7 +171,7 @@
     gap: 10px;
     background-color: white;
     margin-top: 12px;
-    padding: 12px 20px;
+    padding: 12px 14px;
     border-radius: 12px;
 }
 
@@ -310,6 +310,7 @@
     align-items: center;
     gap: 15px;
 }
+
 .app-section .btn-link .btn-main-text {
     font-size: 20px;
     line-height: 32px;
@@ -317,21 +318,74 @@
     font-weight: 600;
     color: white;
 }
+
 .app-section .btn-link .btn-sub-text {
     font-size: 14px;
     line-height: 26px;
     color: white;
 }
+
 .app-section .app-btns .btn-link img {
     padding-left: 20px;
 }
 
 /* footer section styles  */
 
-.footer__section{
-    
+.footer__section {
+    margin-top: 50px;
+    /* temporary style */
+    height: 818px;
+    background-color: #058041;
+}
+.footer__section .right-side{
+    margin-left: 40px;
+}
+.footer__section .footer__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
+.footer__section .footer__top>div {
+    width: 50%;
+}
+.newsletter-input{
+    width: 521px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 0px 10px 0px 30px;
+    font-size: 18px;
+    line-height: 32px;
+    border: 0.5px solid white;
+}
+
+.footer__section .footer__top .footer_desc {
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+}
+.footer__section .newsletter-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+    color: white;
+}
+
+.newsletter-content{
+    position: relative;
+}
+.newsletter-content button{
+    position: absolute;
+    right: 0;
+}
+.newsletter-content .submit{
+    height: 100%;
+    width: 125px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
 @media only screen and (max-width: 768.98px) {
     .hero__nav .link {
         color: #7D7D7D;
@@ -476,11 +530,12 @@
 }
 
 /* ----------------------------- */
-.find-job__section{
+.find-job__section {
     padding: 50px 0;
     background-color: antiquewhite;
 }
-.find-job__container{
+
+.find-job__container {
     max-width: 1224px;
     width: 100%;
     margin: 0 auto;
@@ -489,7 +544,8 @@
     align-items: center;
     column-gap: 15px;
 }
-.item-icon{
+
+.item-icon {
     width: 100px;
     height: 100px;
     background-color: white;
@@ -512,7 +568,8 @@
     display: flex;
     align-items: center;
 }
-.item-icon-wrap::after{
+
+.item-icon-wrap::after {
     content: '';
     position: absolute;
     width: 100px;
@@ -523,16 +580,18 @@
     top: 20px;
     left: 20px;
 }
-.find-job__item{
+
+.find-job__item {
     display: flex;
     align-items: start;
     column-gap: 50px;
 }
 
-.content-title{
+.content-title {
     margin-bottom: 14px;
 }
-.find-job__right{
+
+.find-job__right {
     display: flex;
     row-gap: 80px;
     flex-direction: column;
