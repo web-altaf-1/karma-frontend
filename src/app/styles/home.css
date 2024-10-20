@@ -329,7 +329,9 @@
 /* footer section styles  */
 
 .footer__section{
-    
+    margin-top: 50px;  /* temporary style */
+    height: 818px;
+    background-color: #058041;
 }
 
 @media only screen and (max-width: 768.98px) {

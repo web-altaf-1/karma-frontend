@@ -6,6 +6,7 @@ import SearchByIndustry from "../components/home/SearchByIndustry";
 import FunctionalArea from "../components/home/FunctionalArea";
 import LookingExpert from "../components/home/LookingExpert";
 import AppSection from "../components/home/AppSection";
+import FooterSection from "../components/home/FooterSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <LookingExpert />
       <FunctionalArea />
       <AppSection />
+      <FooterSection />
     </div>
   );
 }
