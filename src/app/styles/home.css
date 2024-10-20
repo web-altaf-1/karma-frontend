@@ -338,5 +338,6 @@
     .functional__area .functional-items {
         margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
+        max-width: 398px;
     }
 }
