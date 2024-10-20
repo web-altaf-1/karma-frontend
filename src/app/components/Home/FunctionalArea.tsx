@@ -56,7 +56,7 @@ const FunctionalArea = () => {
     <div className="functional__area">
       <div className="main-container">
         <h3 className="area-title" style={{ marginBottom: "70px" }}>
-          ইন্ডাস্ট্রি অনুযায়ী চাকুরি BY FUNCTIONAL AREA
+          ইন্ডাস্ট্রি অনুযায়ী চাকুরি BY <br /> <span>FUNCTIONAL AREA</span>
         </h3>
         <div className="functional-items">
           {data?.map((item, index) => {
