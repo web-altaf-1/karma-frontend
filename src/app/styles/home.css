@@ -294,6 +294,7 @@
     .hot_jobs__section {
         display: inherit;
         height: auto;
+        padding-bottom: 40px;
     }
 
     .category__card {
@@ -307,6 +308,10 @@
     }
 
     /* industry start from here  */
+    .industry__container{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    } 
     .search_industry_title{
         font-size: 26px;
         line-height: 36px;
@@ -339,5 +344,8 @@
         margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
         max-width: 398px;
+    }
+    .functional__area .functional-item{
+        width: 100%;
     }
 }
